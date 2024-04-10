@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="374dp"
+        android:layout_height="677dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="27dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/TextView"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:scrollbarSize="20dp"
+            android:text="猜拳"
+            android:textSize="28dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="391dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="163dp"
+                    android:layout_height="76dp"
+                    android:gravity="center"
+                    android:text="電腦" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="195dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="玩家" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="294dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="194dp"
+                    android:layout_height="300dp"
+                    android:background="@drawable/btn_bg_selector"
+                    android:gravity="center"
+                    android:scaleType="fitCenter"
+                    android:text="WaitPlayer"
+                    android:textSize="35dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnScissors"
+                        android:layout_width="179dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="scissors" />
+
+                    <Button
+                        android:id="@+id/btnRock"
+                        android:layout_width="178dp"
+                        android:layout_height="wrap_content"
+                        android:text="rock" />
+
+                    <Button
+                        android:id="@+id/btnPaper"
+                        android:layout_width="178dp"
+                        android:layout_height="wrap_content"
+                        android:text="paper" />
+                </LinearLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:gravity="center"
+            android:text="Plat choose Button"
+            android:textSize="28dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
